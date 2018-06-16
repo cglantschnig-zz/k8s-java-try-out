@@ -1,0 +1,12 @@
+kind: Service
+apiVersion: v1
+metadata:
+  name: java
+  namespace: default
+spec:
+  selector:
+    app: java
+  ports:
+    - name: http
+      port: 8080
+  type: NodePort
